@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Example</title>
+  <!--Link to external file -->
+  <link rel="stylesheet" href="Portfolio/main.css">
+ <link rel="stylesheet" href="form-no-js.css">
+ 
+</head>
+<body>
+  <header>
+    <h1>Form Example</h1>
+  </header>
+
+  <main>
+    <form action="https://httpbin.org/post" method="post">
+      <label for="name" >Name: (required)</label>
+      <input type="text" id="name" name="name" autocomplete="name" minlength="1" maxlength="100" required>
+
+      <label for="email" >Email: (required)</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+
+      <label for="comments">Comments: (required)</label>
+      <p id="comment-instructions">Enter 10 to 1000 characters</p>
+      <textarea id="comments" name="comments" aria-describedby="comment-instructions" minlength="10" maxlength="1000" required></textarea>
+      <input type="hidden" name="possible_bot" value="true">
+
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

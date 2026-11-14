@@ -1,0 +1,37 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+main{
+    padding: 1.5rem;
+}
+
+/* Normal state: every field gets the same 2px border so nothing shifts later */
+input, textarea{
+    border: 2px solid var(--teal-dark);
+}
+
+input, textarea, button{
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5rem;
+}
+
+textarea{
+    resize: vertical;
+}
+
+/* Valid: only after the user has interacted with the field */
+input:user-valid, textarea:user-valid{
+    border-color: var(--teal);
+}
+
+/* Invalid: only after the user has interacted with the field or tried to submit */
+input:user-invalid, textarea:user-invalid{
+    border-color: var(--burgundy);
+    background-color: #ffdddd;
+}
