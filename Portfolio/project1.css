@@ -3,7 +3,7 @@
 /* Adjacent sibling combinator (+): the "Role | Timeline | Team" line right after the page title */
 main > h1 + p{
     margin: 0 var(--space-lg) var(--space-lg);
-    color: var(--teal);
+    color: var(--link);
     font-style: italic;
 }
 
@@ -28,8 +28,8 @@ main > form{
 main > form button,
 main > button{
     background-color: transparent;
-    color: var(--teal);
-    border: 2px solid var(--teal);
+    color: var(--link);
+    border: 2px solid var(--link);
     padding: 0.625em 1.125em;   /* em so the padding scales with the button text */
     border-radius: var(--radius);
     font-family: inherit;

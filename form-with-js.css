@@ -12,7 +12,9 @@ main{
 
 /* Normal state: every field gets the same 2px border so nothing shifts later */
 input, textarea{
-    border: 2px solid var(--teal-dark);
+    border: 2px solid var(--field-border);
+    background-color: var(--field-bg);
+    color: var(--field-text);
 }
 
 input, textarea, button{
@@ -27,25 +29,25 @@ textarea{
 
 /* Valid: only after the user has interacted with the field */
 input:user-valid, textarea:user-valid{
-    border-color: var(--teal);
+    border-color: var(--link);
 }
 
 /* Invalid: only after the user has interacted with the field or tried to submit */
 input:user-invalid, textarea:user-invalid{
-    border-color: var(--burgundy);
-    background-color: #ffdddd;
+    border-color: var(--error-text);
+    background-color:var(--error-bg);
 }
 
 .error {
   margin: 0;                  /* empty paragraphs take up no space */
-  color: var(--burgundy);
+  color: var(--error-text);
   font-weight: bold;
 }
 #char-count.warning{
-    color: var(--brown);
+    color: var(--warning-text);
     font-weight: bold;
 }
 #char-count.at-limit{
-    color: var(--burgundy);
+    color: var(--error-text);
     font-weight: bold;
 }

@@ -11,8 +11,8 @@
 /* Descendant combinator: the filter buttons above the project grid */
 #filters button{
     background-color: transparent;
-    color: var(--teal);
-    border: 2px solid var(--teal);
+    color: var(--link);
+    border: 2px solid var(--link);
     padding: 0.5em 1em;        /* em so the padding scales with the button text */
     border-radius: var(--radius-pill);
     font-family: inherit;
